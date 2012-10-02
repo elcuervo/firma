@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
-  s.name              = "subskribas"
+  s.name              = "firma"
   s.version           = "0.0.1"
-  s.summary           = "Sign PDF documents"
+  s.summary           = "Sign PDF documents the easy way"
   s.description       = "Sign PDF documents"
   s.authors           = ["elcuervo"]
   s.email             = ["yo@brunoaguirre.com"]

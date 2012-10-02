@@ -3,7 +3,7 @@ $: << File.expand_path(File.dirname(__FILE__), "../lib")
 require "minitest/autorun"
 require "minitest/pride"
 require "tempfile"
-require "subskribas"
+require "firma"
 
 def sample_pdf_file
   sample_path = "test/fixtures/sample_pdf.pdf"

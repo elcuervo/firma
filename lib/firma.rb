@@ -2,7 +2,7 @@ require "openssl"
 require "tmpdir"
 require "origami"
 
-class Subskribas < Struct.new(:file)
+class Firma < Struct.new(:file)
   def sign(options)
     key = OpenSSL::PKey::RSA.new(
       File.open(options.fetch(:key)),
