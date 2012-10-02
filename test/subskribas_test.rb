@@ -22,4 +22,17 @@ describe Subskribas do
     assert Subskribas.is_signed?(@pdf_file)
   end
 
+  it "should sign a pdf with a generated keys" do
+    assert !Subskribas.is_signed?(@pdf_file)
+
+    keys = Subskribas.generate_keys("passphrase")
+
+    Subskribas.sign(@pdf_file,
+      key: keys.fetch(:key).path,
+      passphrase: "passphrase",
+      certificate: keys.fetch(:certificate)
+    )
+
+    assert Subskribas.is_signed?(@pdf_file)
+  end
 end
