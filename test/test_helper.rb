@@ -12,6 +12,10 @@ def sample_pdf_file
   file.path
 end
 
+def sample_signed_pdf_file
+  "test/fixtures/signed_pdf.pdf"
+end
+
 def sample_key
   "test/fixtures/sample.key"
 end

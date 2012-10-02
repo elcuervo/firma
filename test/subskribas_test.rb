@@ -5,6 +5,11 @@ describe Subskribas do
     @pdf_file = sample_pdf_file
   end
 
+  it "should validate if a pdf is signed" do
+    assert !Subskribas.is_signed?(@pdf_file)
+    assert Subskribas.is_signed?(sample_signed_pdf_file)
+  end
+
   it "should sign a pdf file with a given keys" do
     assert !Subskribas.is_signed?(@pdf_file)
 
