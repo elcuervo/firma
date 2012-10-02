@@ -3,6 +3,12 @@
 
 Add a secure signature to a pdf file.
 
+## Installation
+
+```bash
+  gem install firma
+```
+
 ## Check if a pdf it's signed
 
 ```ruby
