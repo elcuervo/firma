@@ -28,7 +28,7 @@ describe Firma do
     keys = Firma.generate_keys("passphrase")
 
     Firma.sign(@pdf_file,
-      key: keys.fetch(:key).path,
+      key: keys.fetch(:key),
       passphrase: "passphrase",
       certificate: keys.fetch(:certificate)
     )

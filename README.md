@@ -31,7 +31,7 @@ Add a secure signature to a pdf file.
   keys = Firma.generate_keys("passphrase")
 
   Firma.sign("my_file.pdf",
-    key: keys.fetch(:key).path,
+    key: keys.fetch(:key),
     passphrase: "passphrase",
     certificate: keys.fetch(:certificate)
   )
